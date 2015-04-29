@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+
+% Packages
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+
+\usepackage[figuresleft]{rotating}
+
+% Commands
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+% Setup
+\author{Team Hydra}
+\title{Final Report}
+
+% Doc structure
+\begin{document}
+
+\input{./tex/title.tex}
+\tableofcontents
+\clearpage
+\input{./tex/introduction.tex}
+\clearpage
+\input{./tex/literature_review.tex}
+\clearpage
+\input{./tex/requirements.tex}
+\clearpage
+\input{./tex/design.tex}
+\clearpage
+\input{./tex/implementation.tex}
+\clearpage
+\input{./tex/testing.tex}
+\clearpage
+\input{./tex/evaluation.tex}
+\clearpage
+\input{./tex/conclusion.tex}
+\clearpage
+\end{document}
