@@ -1,0 +1,20 @@
+{
+  "name": "report",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HeilHydra/report"
+  },
+  "author": "Hydra",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-tex-bibtex": "^0.1.0",
+    "grunt-tex-hunspell": "^0.1.2",
+    "grunt-tex-pdflatex": "^0.1.1",
+    "grunt-tex-wordcount": "^0.1.0",
+    "load-grunt-tasks": "^2.0.0",
+    "grunt-tex-hunspell": "^0.2.0"
+  }
+}
