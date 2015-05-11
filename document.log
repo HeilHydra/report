@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.27)  11 MAY 2015 21:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.27)  11 MAY 2015 23:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -193,14 +193,7 @@ Package pdftex.def Info: ./img/lu-logo.png used on input line 4.
  [1
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img/l
-u-logo.png>]) (./document.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 5.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 5.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 5.
-)
+u-logo.png>]) (./document.toc)
 \tf@toc=\write3
 \openout3 = `document.toc'.
 
@@ -216,19 +209,65 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
  [2
 
 ]) [3]
-(./tex/project_plan.tex) [4
+(./tex/project_plan.tex
+<./img/gantt_chart.png, id=23, 1436.36626pt x 644.4075pt>
+File: ./img/gantt_chart.png Graphic file (type png)
 
-] (./tex/idea_analysis.tex) [5
+<use ./img/gantt_chart.png>
+Package pdftex.def Info: ./img/gantt_chart.png used on input line 6.
+(pdftex.def)             Requested size: 601.28584pt x 269.76434pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 9.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 9.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 9.
+ [4
+
+ <./img/gantt_chart.png>] [5
 
 ]
-(./tex/literature_review.tex
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+ []
+
+Missing character: There is no £ in font cmr12!
+[6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 69--72
+
+ []
+
+<./img/rad-model.jpg, id=38, 587.19376pt x 375.65344pt>
+File: ./img/rad-model.jpg Graphic file (type jpg)
+
+<use ./img/rad-model.jpg>
+Package pdftex.def Info: ./img/rad-model.jpg used on input line 75.
+(pdftex.def)             Requested size: 234.8775pt x 150.2587pt.
+
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 73--78
+[]$[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--78
+
+ []
+
+[8 <./img/rad-model.jpg>] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 95--97
+
+ []
+
+[10]) [11] (./tex/idea_analysis.tex) [12
+
+] (./tex/literature_review.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--10
 
  []
 
-[6
+[13
 
-] [7]
+] [14]
 Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
@@ -238,19 +277,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-[8] [9]
+[15] [16]
 Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
-[10]
+[17]
 Missing character: There is no £ in font cmr12!
 Missing character: There is no £ in font cmr12!
 Missing character: There is no £ in font cmr12!
 Missing character: There is no £ in font cmr12!
- [11]
+ [18]
 
-LaTeX Warning: Reference `fig:license_prices' on page 12 undefined on input lin
+LaTeX Warning: Reference `fig:license_prices' on page 19 undefined on input lin
 e 66.
 
 
@@ -258,7 +297,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
-<./img/table_license.png, id=49, 653.8026pt x 304.4976pt>
+<./img/table_license.png, id=75, 653.8026pt x 304.4976pt>
 File: ./img/table_license.png Graphic file (type png)
 
 <use ./img/table_license.png>
@@ -274,12 +313,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--74
 
  []
 
-[12 <./img/table_license.png>]
+[19 <./img/table_license.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 88--90
 
  []
 
-[13]
+[20]
 Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
@@ -290,7 +329,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--95
 
  []
 
-) [14] (./tex/requirements.tex
+) [21] (./tex/requirements.tex
 Underfull \hbox (badness 10000) in paragraph at lines 5--16
 
  []
@@ -305,7 +344,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--53
 
  []
 
-[15
+[22
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 57--68
@@ -317,7 +356,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--82
 
  []
 
-[16]
+[23]
 Underfull \hbox (badness 10000) in paragraph at lines 85--96
 
  []
@@ -337,7 +376,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 127--137
 
  []
 
-[17]
+[24]
 Underfull \hbox (badness 10000) in paragraph at lines 140--150
 
  []
@@ -358,7 +397,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--177
 
  []
 
-[18]
+[25]
 Underfull \hbox (badness 10000) in paragraph at lines 180--190
 
  []
@@ -373,7 +412,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 207--217
 
  []
 
-[19]
+[26]
 Underfull \hbox (badness 10000) in paragraph at lines 221--231
 
  []
@@ -383,14 +422,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 234--37
 
  []
 
-[20] (./tex/design.tex) [21
+[27] (./tex/design.tex) [28
 
-] (./tex/implementation.tex) [22
+] (./tex/implementation.tex) [29
 
 ]
-(./tex/evaluation.tex) [23
+(./tex/evaluation.tex) [30
 
-] (./tex/conclusion.tex) [24
+] (./tex/conclusion.tex) [31
 
 ] (./document.aux)
 
@@ -401,23 +440,23 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 2827 strings out of 493315
- 44598 string characters out of 6137904
+ 2840 strings out of 493315
+ 44858 string characters out of 6137904
  107310 words of memory out of 5000000
- 6226 multiletter control sequences out of 15000+600000
+ 6236 multiletter control sequences out of 15000+600000
  10693 words of font info for 37 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,9n,38p,1834b,227s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,14n,38p,1834b,293s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
 /usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></u
 sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmu10.pfb>
-Output written on document.pdf (25 pages, 192932 bytes).
+Output written on document.pdf (32 pages, 517038 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
- 76 compressed objects within 1 object stream
+ 139 PDF objects out of 1000 (max. 8388607)
+ 91 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
