@@ -1,11 +1,12 @@
 \contentsline {section}{\numberline {1}Introduction}{2}
 \contentsline {section}{\numberline {2}Literature Review}{3}
-\contentsline {subsection}{\numberline {2.1}\textbf {Competitor}}{3}
-\contentsline {subsection}{\numberline {2.2}\textbf {Music Sources}}{3}
-\contentsline {subsection}{\numberline {2.3}\textbf {Legal Issues}}{4}
-\contentsline {section}{\numberline {3}Requirements}{5}
-\contentsline {section}{\numberline {4}Design}{6}
-\contentsline {section}{\numberline {5}Implementation}{7}
-\contentsline {section}{\numberline {6}Testing}{8}
-\contentsline {section}{\numberline {7}Evaluation}{9}
-\contentsline {section}{\numberline {8}Conclusion}{10}
+\contentsline {subsection}{\numberline {2.1}User Interface Design}{3}
+\contentsline {subsection}{\numberline {2.2}\textbf {Competitor}}{4}
+\contentsline {subsection}{\numberline {2.3}\textbf {Music Sources}}{5}
+\contentsline {subsection}{\numberline {2.4}\textbf {Legal Issues}}{5}
+\contentsline {section}{\numberline {3}Requirements}{7}
+\contentsline {section}{\numberline {4}Design}{8}
+\contentsline {section}{\numberline {5}Implementation}{9}
+\contentsline {section}{\numberline {6}Testing}{10}
+\contentsline {section}{\numberline {7}Evaluation}{11}
+\contentsline {section}{\numberline {8}Conclusion}{12}
