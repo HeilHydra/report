@@ -1,2 +1,243 @@
 \section{Requirements}
 
+\subsection*{Global}
+
+\noindent
+\begin{tabular}{|l || p{12.0cm}|}
+  \hline
+  Requirement:       & REQ.1 \\ \hline
+  Type:              & Functional \\ \hline
+  Description:       & The user must be able to connect to the geolocation configured by the client. \\ \hline
+  Rationale:         & When the system is initially set up, the client (coffee shop, office etc) will set up a geolocation and geofence for their customers using choona. The user will then be able to connect to this geo-area via their phone and then be able to suggest songs for the public in that geofence. This must be paired with REQ.2 for the user to get full access to the app. \\ \hline
+  Dependencies:      & REQ.2 \\ \hline
+  MoSCoW Rating:     & Must \\
+\hline
+\end{tabular}\\
+
+\vspace{0.5cm}
+
+\noindent
+\begin{tabular}{|l || p{12.0cm}|}
+  \hline
+  Requirement:       & REQ.2 \\ \hline
+  Type:              & Functional \\ \hline
+  Description:       & The user must be able to log on using social networks/by email. \\ \hline
+  Rationale:         & An account is required for the user to suggest songs. This must be paired with REQ.1 for the user to get full access to the app. \\ \hline
+  Dependencies:      & REQ.1 \\ \hline
+  MoSCoW Rating:     & Must \\
+\hline
+\end{tabular}\\
+
+\vspace{0.5cm}
+
+\noindent
+\begin{tabular}{|l || p{12.0cm}|}
+  \hline
+  Requirement:       & REQ.3 \\ \hline
+  Type:              & Functional \\ \hline
+  Description:       & The client must be able to configure their choona configuration for their customers through a management system. \\ \hline
+  Rationale:         & The client must be able to configure different music options for their business and their geofence. This would include things like:
+  \begin{itemize}
+  \item Subscription options.
+  \item Genre restrictions.
+  \item Be able to configure any ad services for the location; including sound bytes and carousel images.
+  \item Default playlists if no songs are suggested.
+  \item Geofence/Geolocation options.
+  \item Override the queue if needed.
+  \end{itemize}
+ \\ \hline
+  Dependencies:      & REQ.1 \\ \hline
+  MoSCoW Rating:     & Must \\
+\hline
+\end{tabular}\\
+
+\vspace{0.5cm}
+\subsection*{Playlist Page}
+
+\noindent
+\begin{tabular}{|l || p{12.0cm}|}
+  \hline
+  Requirement:       & REQ.4 \\ \hline
+  Type:              & Functional \\ \hline
+  Description:       & The user must be able to suggest a song using search. \\ \hline
+  Rationale:         & For the dynamic playlist to work, the user must be able suggest a song they want to be played in public. This song will then be added to the dynamic playlist ordered by the number of votes. If the song already belongs on the playlist then it will not be added again. \\ \hline
+  Dependencies:      & REQ.1, REQ.2 \\ \hline
+  MoSCoW Rating:     & Must \\
+\hline
+\end{tabular}\\
+
+\vspace{0.5cm}
+
+\noindent
+\begin{tabular}{|l || p{12.0cm}|}
+  \hline
+  Requirement:       & REQ.5 \\ \hline
+  Type:              & Functional \\ \hline
+  Description:       & The user must be able to see all the songs suggested by others ordered by a intelligent algorithm for the geolocation they are connected to.\\ \hline
+  Rationale:         & The user should be able to see what songs are suggests so they can vote for songs if they wish, these songs must be sorted by an intelligent algorithm where the amount of votes will be a big factor with elements to make the order of songs fairer (eliminating up voting too much, down voting too much, ghost voting). \\ \hline
+  Dependencies:      & REQ.1, REQ.2 \\ \hline
+  MoSCoW Rating:     & Must \\
+\hline
+\end{tabular}\\
+
+\vspace{0.5cm}
+
+\noindent
+\begin{tabular}{|l || p{12.0cm}|}
+  \hline
+  Requirement:       & REQ.6 \\ \hline
+  Type:              & Functional \\ \hline
+  Description:       & The user must be able to vote on the songs suggested by others for the geolocation they are connected to. \\ \hline
+  Rationale:         & Songs that are already on the playlist can be upvoted/downvoted by the user. The dynamic playlist is dependent upon this where song are ordered by a amount of votes. \\ \hline
+  Dependencies:      & REQ.1, REQ.2 \\ \hline
+  MoSCoW Rating:     & Must \\
+\hline
+\end{tabular}\\
+
+\vspace{0.5cm}
+
+\noindent
+\begin{tabular}{|l || p{12.0cm}|}
+  \hline
+  Requirement:       & REQ.7 \\ \hline
+  Type:              & Functional \\ \hline
+  Description:       & For each song, the user must be able to see the album cover, song title and album title. \\ \hline
+  Rationale:         & This is needed for the user to identify the song, the album cover adds a visual factor to all the songs. \\ \hline
+  Dependencies:      & REQ.1, REQ.2 \\ \hline
+  MoSCoW Rating:     & Must \\
+\hline
+\end{tabular}\\
+
+\vspace{0.5cm}
+
+\noindent
+\begin{tabular}{|l || p{12.0cm}|}
+  \hline
+  Requirement:       & REQ.8 \\ \hline
+  Type:              & Functional \\ \hline
+  Description:       & The user must be able to see what song is currently playing in the geolocation they are connected to. \\ \hline
+  Rationale:         & This is to inform the user what is being played currently. Information such as album art, song title, album title and time elapsed will be shown. \\ \hline
+  Dependencies:      & REQ.1, REQ.2 \\ \hline
+  MoSCoW Rating:     & Must \\
+\hline
+\end{tabular}\\
+
+\vspace{0.5cm}
+
+\noindent
+\begin{tabular}{|l || p{12.0cm}|}
+  \hline
+  Requirement:       & REQ.9 \\ \hline
+  Type:              & Functional \\ \hline
+  Description:       & The user should be able to share the song currently playing.  \\ \hline
+  Rationale:         & To add a social side to the application, the user should be able to share what song they are listening to and where on various social networks. Their friends will be able to see this shared information not only on the social networks itself but also on their activity page. They should also be able to add a message to their activity. \\ \hline
+  Dependencies:      & REQ.1, REQ.2, REQ.8 \\ \hline
+  MoSCoW Rating:     & Should \\ \hline
+\end{tabular}\\
+
+\vspace{0.5cm}
+
+\noindent
+\begin{tabular}{|l || p{12.0cm}|}
+  \hline
+  Requirement:       & REQ.10 \\ \hline
+  Type:              & Functional \\ \hline
+  Description:       & The user should be able to hear the currently playing song through their headphones  in the geolocation they are connected to.  \\ \hline
+  Rationale:         & This is for the convenience to the user, they should be able to listen to the music privately if they wish. In some use cases this would be ideal such as in an office environment. \\ \hline
+  Dependencies:      & REQ.1, REQ.2 \\ \hline
+  MoSCoW Rating:     & Should \\ \hline
+\end{tabular}\\
+
+\vspace{0.5cm}
+
+\noindent
+\begin{tabular}{|l || p{12.0cm}|}
+  \hline
+  Requirement:       & REQ.11 \\ \hline
+  Type:              & Functional \\ \hline
+  Description:       & The user should have the option to buy the currently playing song. \\ \hline
+  Rationale:         & If the user likes the song, they should have the option to buy it through various services such as google play, itunes etc. This would also be another technique to monetize the app by promoting the artist and their song.    \\ \hline
+  Dependencies:      & REQ.1, REQ.2, REQ.8  \\ \hline
+  MoSCoW Rating:     & Should \\ \hline
+\end{tabular}\\
+
+\vspace{0.5cm}
+\subsection*{Activity Page}
+
+\noindent
+\begin{tabular}{|l || p{12.0cm}|}
+  \hline
+  Requirement:       & REQ.12 \\ \hline
+  Type:              & Functional \\ \hline
+  Description:       & The user should be able to see a list of “shared” songs.   \\ \hline
+  Rationale:         & To add a social side to the application, the user should be able to share what song they are listening to and where on various social networks. Their friends will be able to see this shared information not only on the social networks itself but also on their activity page. \\ \hline
+  Dependencies:      & REQ.1, REQ.2, REQ.9 \\ \hline
+  MoSCoW Rating:     & Must \\ \hline
+\end{tabular}\\
+
+\vspace{0.5cm}
+
+\noindent
+\begin{tabular}{|l || p{12.0cm}|}
+  \hline
+  Requirement:       & REQ.13 \\ \hline
+  Type:              & Functional \\ \hline
+  Description:       & For each activity the user should be able to see the name of person, the song name and the location the person is listening at together with any additional message and a time stamp.   \\ \hline
+  Rationale:         & This information is required for the user to identify each activity and so they can differentiate between their friends. \\ \hline
+  Dependencies:      & REQ.1, REQ.2, REQ.9 \\ \hline
+  MoSCoW Rating:     & Must \\ \hline
+\end{tabular}\\
+
+\vspace{0.5cm}
+\subsection*{History Page}
+
+\noindent
+\begin{tabular}{|l || p{12.0cm}|}
+  \hline
+  Requirement:       & REQ.14 \\ \hline
+  Type:              & Functional \\ \hline
+  Description:       & The user should be able to see the places they visited and the songs that were playing in the timeframe they were there.  \\ \hline
+  Rationale:         & In the likelihood of the user wondering what song was playing at a certain place they visited and not being able to remember the name, they can use the history page to look up that song.  \\ \hline
+  Dependencies:      & REQ.1, REQ.2, REQ.16 \\ \hline
+  MoSCoW Rating:     & Must \\ \hline
+\end{tabular}\\
+
+\vspace{0.5cm}
+
+\noindent
+\begin{tabular}{|l || p{12.0cm}|}
+  \hline
+  Requirement:       & REQ.15 \\ \hline
+  Type:              & Non-Functional \\ \hline
+  Description:       & The user should only be able to see history for the last week.   \\ \hline
+  Rationale:         & To minimize the data overload on storing all history information for all users. The app will only display history in the last week. \\ \hline
+  Dependencies:      & REQ.1, REQ.2, REQ.16 \\ \hline
+  MoSCoW Rating:     & Must \\ \hline
+\end{tabular}\\
+
+\vspace{0.5cm}
+\subsection*{Settings Page}
+
+\noindent
+\begin{tabular}{|l || p{12.0cm}|}
+  \hline
+  Requirement:       & REQ.16 \\ \hline
+  Type:              & Functional \\ \hline
+  Description:       & The must be able to toggle whether their history will be logged or not.   \\ \hline
+  Rationale:         & If the user wishes not to log all the songs played at the places they visited, they should be able to turn this feature off. This would be in the settings page. \\ \hline
+  Dependencies:      & REQ.1, REQ.2 \\ \hline
+  MoSCoW Rating:     & Must \\ \hline
+\end{tabular}\\
+
+\vspace{0.5cm}
+
+\noindent
+\begin{tabular}{|l || p{12.0cm}|}
+  \hline
+  Requirement:       & REQ.17 \\ \hline
+  Type:              & Functional \\ \hline
+  Description:       & The user must be able to log out from their choona account.   \\ \hline
+  Rationale:         & There should be a button for the user to log out of their choona account if they wish to maybe log in with an alternative account.  \\ \hline
+  Dependencies:      & REQ.1, REQ.2 \\ \hline
+  MoSCoW Rating:     & Must \\ \hline
+\end{tabular}\\
