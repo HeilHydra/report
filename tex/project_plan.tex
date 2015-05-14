@@ -61,18 +61,18 @@ The main communication method for all team members will be through a ``WhatsApp'
 
 Further to this, we all have access to ``Google Drive''.  We have used this to create a folder that each of us have access to.  Here we can post any documents we want the other team members to view and they can instantly access them and make any changes they want; these changes will be globally updated for all users to see.  \\
 Initially a ``Trello'' discussion board was used to throw ideas around and discuss potential features of the app as well as a broad business model. \\
-We will also be using GitHub.  GitHub is a web based repository that offers Source Code Management (SCM).  SCM is a necessity in a team orientated software development project.  A Version Control System (VCS) allows the developers to make revisions to the code seamlessly and without overwriting someone else changes.  It also allows you to revert to previous versions or examine them where need be; to help identify issues with newer version(s).  This is a very useful tool to have especially when the project involves such a large code base and multiple developers.  
+We will also be using GitHub.  GitHub is a web based repository that offers Source Code Management (SCM).  SCM is a necessity in a team orientated software development project.  A Version Control System (VCS) allows the developers to make revisions to the code seamlessly and without overwriting someone else changes.  It also allows you to revert to previous versions or examine them where need be; to help identify issues with newer version(s).  This is a very useful tool to have especially when the project involves such a large code base and multiple developers.
 
 \subsection{Resources}
 In order to complete this project, there will be several different resources we will need to have access to.  This can usually be split into three different categories; personnel, funds and non-personnel.  However for this project, the only personnel we have are the three team members and this cannot be expanded on.  Funds is also non-negotiable; standing at £0.  \\
 We do have several non-personnel resources - these are resources that we need in order to produce the prototype and documentation.  These are listed below with an explanation as to why these are needed.
 \begin{itemize}
-\item Raspberry Pi - There is the potential for some software to be developed and put on a hardware device in order to connect with the cloud and stream audio (music).  For prototyping it is likely that pre-existing devices such as the Raspberry Pi will be used. 
+\item Raspberry Pi - There is the potential for some software to be developed and put on a hardware device in order to connect with the cloud and stream audio (music).  For prototyping it is likely that pre-existing devices such as the Raspberry Pi will be used.
 \item Speakers - To enable us to listen to the output from the Raspberry Pi
-\item Laptops - these enable us to work as a team in any location at any time and for use in the presentation.  
-\item Television - to present our idea and prototype at the end of the year.
+\item Laptops - These enable us to work as a team in any location at any time and for use in the presentation.
+\item Television - To present our idea and prototype at the end of the year.
 \end{itemize}
-Having the above items will make sure we can complete this project to a good standard and bale us t give a presentation at the end.    
+Having the above items will make sure we can complete this project to a good standard.
 
 \subsection{Software Development Approach}
 Software Development Approaches have existed since the 1970s. They range from rigid, long-term methods such as \emph{Waterfall}. through to experimental and risky approaches like \emph{Extreme Programming}. Factors such as team size, business goals and clients all contribute to choosing the correct approach.\\
@@ -81,9 +81,9 @@ To identify the correct software development process to use we must first decide
 \begin{enumerate}
   \item \textbf{Team Size} -
     Most of the development throughout this project will be done by one person. This removes the need for large-scale approaches such as \emph{Waterfall} and \emph{Spiral} and instead opens up the possibility of a faster, looser process such as \emph{Agile}.
-  \item \textbf{Client Interaction} - 
+  \item \textbf{Client Interaction} -
     If the project idea is accepted we will be allowed to work very closely with a representative from Atos. This means our development approach needs to incorporate this throughout the entire lifecycle, making methodologies such as \emph{Waterfall} less relevant since they do not encourage client interaction during the development stage.
-  \item \textbf{Timeline} - 
+  \item \textbf{Timeline} -
     The entire development and testing cycle for the project is only a few months, so whatever approach is chosen needs to be dynamic and allow for quick iterations without the need to go through the entire process again. This requirement makes approaches such as \emph{Incremental Development} inappropriate because they add in repeated requirements analysis and architecture design steps that may not be necessary.
   \item \textbf{Deliverable} -
     The client is expecting a working prototype to be delivered at the end of the project. The technology must be built to a satisfactory standard, but does not need to be production-ready nor be immaculately written. This allows for the testing, integration and implementation steps in the software development approach to be removed as a priority and opens up the possibility of using less formal approaches such as \emph{Prototyping} and \emph{Extreme Programming}.
@@ -108,11 +108,11 @@ The technical considerations for this project can be divided into two sections: 
 One of the basic top-level requirements for this project is that the end product is centred around a mobile application.  Therefore it is important to ensure that all the technology used or idealised is compatible with as many mobile devices as possible.  If the app starts to have a dependency on niche features, such as NFC and 4G, there is a risk of excluding large quantities of users.\\
 For a mobile application, we must consider the platform.  There are currently three major mobile platforms that support apps: Android, iOS and Windows Phone.  Others like Blackberry and Firefox OS either do not have a thriving application community or have a very small user-base.  This project should ideally support all three of the major platforms.  The problem with this is that each one requires applications to be written in different languages.  In order to come to a decision, we need to consider the following:
 \begin{itemize}
-\item \emph{Native Applications} - A native application is one that is written to work directly with the device's operating system. For example on Android this would mean that the application is written in the programming language Java and that it directly uses the device's native libraries. The advantage this approach is mainly performance, but there are also certain features that are only available for native applications. The disadvantage is that the application has to be written separately for each platform you want to support.
+\item \emph{Native Applications} - A native application is one that is written to work directly with the device's operating system. For example on Android this would mean that the application is written in the programming language Java and that it directly uses the device's native libraries. The advantage this approach is mainly performance, but there are also certain features that are only available for native applications. The disadvantage is that the application has to be written separately for each platform that needs to be supported.
 \item \emph{Framework Applications} - To solve the difficulties of supporting multiple platforms, frameworks such as Apache Cordova and Adobe Phonegap have been created. These allow developers to write their applications once and have it automatically work across all major platforms. The downside here is that the application normally exists inside a `wrapper' which can have a negative impact on performance.  \\
-Phonegap allows users to develop hybrid mobile device application; an app that is neither a native mobile app (as layout rendering is done via web views instead of a platform native UI framework) nor a pure web-based app (because they are packaged as apps for distribution and have access to native device APIs).  At this point, we then need to make another decision; how we are going to build the web app?  There are two methods we can choose from; writing the whole app in pure JavaScript, HTML and CSS.  This requires a lot of effort thus most people will opt to use a regular framework e.g. AngularJS, ReactJS or EmberJS but there is one small issue with these frameworks; they are not specifically designed for mobile app development (`mobile-first').  Ideally if we want to create an app, we want to use a framework that is specifically designed to create them i.e. a framework that makes use of another framework.  One example is \textbf{Ionic}.  Ionic (making use of AngularJS) is a suite of components and styles that are mobile friendly hence making it perfect for app development.
+Phonegap allows users to develop hybrid mobile device applications; an app that is neither a native mobile app (as layout rendering is done via web views instead of a platform native UI framework) nor a pure web-based app (because they are packaged as apps for distribution and have access to native device APIs).  At this point, we then need to make another decision; how we are going to build the web app?  There are two methods we can choose from; writing the whole app in pure JavaScript, HTML and CSS.  This requires a lot of effort thus most people will opt to use a regular framework e.g. AngularJS, ReactJS or EmberJS but there is one small issue with these frameworks; they are not specifically designed for mobile app development (`mobile-first').  Ideally if we want to create an app, we want to use a framework that is specifically designed to create them i.e. a framework that makes use of another framework.  One example is \textbf{Ionic}.  Ionic (making use of AngularJS) is a suite of components and styles that are mobile friendly hence making it perfect for app development.
 \end{itemize}
-The \textbf{Technology} behind the mobile device is another area of consideration.  Features such as NFC are starting to become prevalent in many high-end smartphones yet there are still devices that block the use of such technology (such as the iPhone range - the iPhone 6 does have NFC capability but this is only available for apple pay) and there are devices that don't have this capability purely because they are on the lower-end of the market. 
+The \textbf{Technology} behind the mobile device is another area of consideration.  Features such as NFC are starting to become prevalent in many high-end smartphones yet there are still devices that block the use of such technology (such as the iPhone range - the iPhone 6 does have NFC capability but this is only available for Apple pay) and there are devices that don't have this capability purely because they are on the lower-end of the market.
 
 \subsubsection{Server-Side Systems}
 Many ideas and concepts in this project revolve around connected data and technology. There are likely to be many different services and systems required in order to complete the project. Designing and architecting will be an important part of ensuring the project is a success.  \\
@@ -136,9 +136,9 @@ There are many different styles of \textbf{Software Architecture}. For this proj
     \end{itemize}
 A solid \textbf{Infrastructure} is essential in order to adequately support the numerous software services and systems required for the project. There are several options available when it comes to selecting infrastructure components (servers, database management systems etc):
     \begin{itemize}
-      \item \textbf{Cloud Computing} - 
+      \item \textbf{Cloud Computing} -
         Cloud-based systems such as \emph{Amazon Web Services} (AWS) and \emph{IBM SoftLayer} allow systems engineers to easily configure and deploy scalable services across the globe. They often support many different types of services (application servers, databases, data processors, queues etc) and can be configured quickly and easily through user interfaces, rather than having to manually set up each service. The downside to cloud-based infrastructure is usually the cost and also the added abstraction; the systems engineer is no longer in direct control of each moving part which can sometimes make fault finding a more laborious process.
-      \item \textbf{Dedicated Servers} - 
+      \item \textbf{Dedicated Servers} -
         Dedicated servers are the more traditional approach to supporting software systems. They give the systems engineer absolute control over the entire infrastructure, however this goes hand-in-hand with the additional responsibility involved in configuring everything by hand. Another concern is redundancy. In a cloud-based system it is very easy to spin up copies of a service in the event of failure, however with a dedicated system you normally need to have servers on standby all the time. Compared to cloud services, dedicated servers can often work out cheaper.
     \end{itemize}
 
@@ -153,7 +153,7 @@ With any project, regardless of type or size there are risks involved. A risk as
 \textbf{Impact} & High \\ \hline
 \textbf{Effect} & A solution not identifying and solving their needs is created due to lack of understanding. \\ \hline
 \textbf{Risk reduction actions} & We read the specification multiple times and capture the requirements properly at the beginning of the project.  It is important to highlight and dissolve any areas of uncertainty. \\ \hline
-\textbf{If it occurs} & \emph{Triggers:} If the initial feedback requests a lot of changes. \emph{Actions:} Re-evaluate our proposal to make sure it aligns with the specification and capture the right requirements.\\ 
+\textbf{If it occurs} & \emph{Triggers:} If the initial feedback requests a lot of changes. \emph{Actions:} Re-evaluate our proposal to make sure it aligns with the specification and capture the right requirements.\\
 \hline
 \end{tabular}\\
 \vspace{0.5cm}
@@ -166,7 +166,7 @@ With any project, regardless of type or size there are risks involved. A risk as
 \textbf{Impact} & High \\ \hline
 \textbf{Effect} & The solution will have to be modified to fit with the new specification/requirements.  This slows progress through wasted time and resources.   \\ \hline
 \textbf{Risk reduction actions} & Identify requirements as early as possible and that the customer is consulted with these requirements thus allowing any changes to be made at the earliest possible stage make. \\ \hline
-\textbf{If it occurs} & \emph{Triggers:} If the initial requirements need multiple changes. \emph{Actions:} Discuss the required changes and determine how it effects the other phases of the system.\\ 
+\textbf{If it occurs} & \emph{Triggers:} If the initial requirements need multiple changes. \emph{Actions:} Discuss the required changes and determine how it effects the other phases of the system.\\
 \hline
 \end{tabular}\\
 \vspace{0.5cm}
@@ -179,7 +179,7 @@ With any project, regardless of type or size there are risks involved. A risk as
 \textbf{Impact} & Medium \\ \hline
 \textbf{Effect} & Duplication of tasks completed with team members unsure of their tasks and responsibilities.  Time and resources are wasted.\\ \hline
 \textbf{Risk reduction actions} & Plan out the different tasks and assign the tasks to different team members. \\ \hline
-\textbf{If it occurs} & \emph{Actions:} Assign members to specific tasks where these are formally recorded so no confusion occurs later within the project.  On-going assessments will be carried out for the addition of new tasks and the allocation/reallocation of tasks.\\ 
+\textbf{If it occurs} & \emph{Actions:} Assign members to specific tasks where these are formally recorded so no confusion occurs later within the project.  On-going assessments will be carried out for the addition of new tasks and the allocation/reallocation of tasks.\\
 \hline
 \end{tabular}\\
 \vspace{0.5cm}
@@ -192,7 +192,7 @@ With any project, regardless of type or size there are risks involved. A risk as
 \textbf{Impact} & High \\ \hline
 \textbf{Effect} & The system will not fully meet the specification/requirements.\\ \hline
 \textbf{Risk reduction actions} & Tasks can be broken up evenly based on an estimated completion time and we can follow these deadlines to make sure we stay on track. \\ \hline
-\textbf{If it occurs} &  \emph{Triggers:} run out of time.  \emph{Actions:} Define a gantt chart with task and time scale.\\ 
+\textbf{If it occurs} &  \emph{Triggers:} Start missing milestones.  \emph{Actions:} Define a gantt chart with task and time scale.\\
 \hline
 \end{tabular}\\
 \vspace{0.5cm}
@@ -200,12 +200,12 @@ With any project, regardless of type or size there are risks involved. A risk as
 \noindent
 \begin{tabular}{|l || p{10.3cm}|}
 \hline
-\textbf{Risk} & Poor relationship with Customer \\ \hline
+\textbf{Risk} & Poor relationship with customer \\ \hline
 \textbf{Probability} & Low \\ \hline
 \textbf{Impact} & Medium \\ \hline
 \textbf{Effect} & The system designed may not meet any of their criteria.\\ \hline
 \textbf{Risk reduction actions} & Make sure the relationship remains positive and there is constant communication between both parties \\ \hline
-\textbf{If it occurs} &  \emph{Triggers:} no communication.  \emph{Actions:} Remain in constant contact through email communications and face-to-face meetings.\\ 
+\textbf{If it occurs} &  \emph{Triggers:} Very little/no communication.  \emph{Actions:} Remain in constant contact through email and face-to-face meetings.\\
 \hline
 \end{tabular}\\
 \vspace{0.5cm}
@@ -218,7 +218,7 @@ With any project, regardless of type or size there are risks involved. A risk as
 \textbf{Impact} & High \\ \hline
 \textbf{Effect} & Systems may crash resulting in the loss of data.\\ \hline
 \textbf{Risk reduction actions} & Database redundancy can be used for back-up purposes. \\ \hline
-\textbf{If it occurs} &  \emph{Triggers:} System failure.  \emph{Actions:} Ensure backups are regular and the database can provide this.\\ 
+\textbf{If it occurs} &  \emph{Triggers:} System failure.  \emph{Actions:} Ensure backups are regular and the database can provide this.\\
 \hline
 \end{tabular}\\
 \vspace{0.5cm}
@@ -231,7 +231,7 @@ With any project, regardless of type or size there are risks involved. A risk as
 \textbf{Impact} & Medium \\ \hline
 \textbf{Effect} & Unknown capabilities could halt progress.\\ \hline
 \textbf{Risk reduction actions} & Use technology that we are fully aware of. \\ \hline
-\textbf{If it occurs} &  \emph{Triggers:} not enough documentation.  \emph{Actions:} Have researched around the technology with relation to how we want to use it.\\ 
+\textbf{If it occurs} &  \emph{Triggers:} Not enough documentation/support.  \emph{Actions:} Have researched around the technology with relation to how we want to use it.\\
 \hline
 \end{tabular}\\
 \vspace{0.5cm}
@@ -244,7 +244,7 @@ With any project, regardless of type or size there are risks involved. A risk as
 \textbf{Impact} & High \\ \hline
 \textbf{Effect} & Unusable product\\ \hline
 \textbf{Risk reduction actions} & Server redundancy, automatic failover and load balancing can all be used to minimise the risk and help recover from infrastructure failures. \\ \hline
-\textbf{If it occurs} &  \emph{Triggers:} Power failure, DoS attacks, network issues, software failures.  \emph{Actions:} Ensure backup infrastructure automatically takes over, if backup fails then manually bring up services to ensure system stability.\\ 
+\textbf{If it occurs} &  \emph{Triggers:} Power failure, DoS attacks, network issues, software failures.  \emph{Actions:} Ensure backup infrastructure automatically takes over, if backup fails then manually bring up services to ensure system stability.\\
 \hline
 \end{tabular}\\
 \vspace{0.5cm}
