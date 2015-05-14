@@ -19,7 +19,7 @@ Finally, the management and control part of the mobile app has not been implemen
 \clearpage
 \subsection{Inter-Service Communication}
 
-As discussed during the design stages, the micro services architecture offers many advantages over traditional monolothic software. By having everything in the system running as a service it is possible to scale the application in every direction with relative ease. It does, however, introduce the complex problem of inter-service communication. Early implementations of the architecture made use of HTTP APIs\footcite{microservices-mueller} which work well in simple applications. Relying on HTTP, however, can be seen as a restriction since it is a one-to-one client-to-server connection. In large scale applications it is often necessary to have one-to-many messaging between many different services. HTTP also requires each service to know how to connect to all other services it wants to communicate with, as shown in figure \ref{fig:http-communication}.
+As discussed during the design stages, the micro services architecture offers many advantages over traditional monolithic software. By having everything in the system running as a service it is possible to scale the application in every direction with relative ease. It does, however, introduce the complex problem of inter-service communication. Early implementations of the architecture made use of HTTP APIs\footcite{microservices-mueller} which work well in simple applications. Relying on HTTP, however, can be seen as a restriction since it is a one-to-one client-to-server connection. In large scale applications it is often necessary to have one-to-many messaging between many different services. HTTP also requires each service to know how to connect to all other services it wants to communicate with, as shown in figure \ref{fig:http-communication}.
 
 \begin{figure}[h!]
   \centering
@@ -28,7 +28,7 @@ As discussed during the design stages, the micro services architecture offers ma
   \label{fig:http-communication}
 \end{figure}
 
-The most popular alternative to HTTP APIs for inter-service communication is a message broker, such as RabbitMQ\footcite{rabbitmq} or Redis\footcite{redis}. In this kind of system, all nodes connect a central broker that is responsible for distributing messages. This has the advantage of a node only needing to know the location of the broker, rather than all other nodes. It also means that messages can be distributed to multiple nodes, removing the one-to-one restriction found in an HTTP-based communcation system. Figure \ref{fig:redis-communication} shows how a redis-based communcation system can be composed.
+The most popular alternative to HTTP APIs for inter-service communication is a message broker, such as RabbitMQ\footcite{rabbitmq} or Redis\footcite{redis}. In this kind of system, all nodes connect a central broker that is responsible for distributing messages. This has the advantage of a node only needing to know the location of the broker, rather than all other nodes. It also means that messages can be distributed to multiple nodes, removing the one-to-one restriction found in an HTTP-based communication system. Figure \ref{fig:redis-communication} shows how a redis-based communication system can be composed.
 
 \begin{figure}[h!]
   \centering
@@ -70,7 +70,7 @@ As shown by figure \ref{fig:waterway-communication}, Waterway replaces the role 
 
 \subsection{Audio Streaming}
 
-Choona allows multiple clients to connect and listen to the same audio stream. This means that each client needs to be listening to the same audio at the same time, otherwise the whole system will become out of sync. The easiest way to achieve this is to always ensure the audio is being broadcast live, with a very small buffer window (in the same way that when watching television you always see what everone else does). Waterway makes this process relatively simple due to it's support of streams. As soon as the audio data is received from an audio source such as Spotify it is buffered and streamed out to other services at the exact bitrate of the song. This ensures that all services in Choona see the exact same audio data and the exact same time. It also has the added advantage of allowing the playlist service to know precisely when a track starts and stops; it can just wait for the buffered audio stream to end. Choona's streaming pipeline is described in figure \ref{fig:streaming}.
+Choona allows multiple clients to connect and listen to the same audio stream. This means that each client needs to be listening to the same audio at the same time, otherwise the whole system will become out of sync. The easiest way to achieve this is to always ensure the audio is being broadcast live, with a very small buffer window (in the same way that when watching television you always see what everyone else does). Waterway makes this process relatively simple due to it's support of streams. As soon as the audio data is received from an audio source such as Spotify it is buffered and streamed out to other services at the exact bitrate of the song. This ensures that all services in Choona see the exact same audio data and the exact same time. It also has the added advantage of allowing the playlist service to know precisely when a track starts and stops; it can just wait for the buffered audio stream to end. Choona's streaming pipeline is described in figure \ref{fig:streaming}.
 
 \begin{figure}[h!]
   \centering
@@ -84,10 +84,10 @@ Clients can then choose to handle the audio in whatever method they prefer; for 
 
 \subsection{API}
 
-Socket.IO is a realtime bi-directional communcation protocol and library, designed to replace standard HTTP-based web communcation. For Choona, Socket.IO offers the following benefits:
+Socket.IO is a realtime bi-directional communication protocol and library, designed to replace standard HTTP-based web communication. For Choona, Socket.IO offers the following benefits:
 
 \begin{itemize}
-  \item \textbf{Bi-directional communication:} HTTP is a client -> server model, where only the client can initiate requests. This is fine for regular websites, however it does not work for scenarios where the server needs to send requests without the client initiating them, such as a realtime application like Choona. To counter this there are now several different strategies and protocols for handling bi-directional communcation on the web, many of which are supported by Socket.IO such as WebSockets and long polling.
+  \item \textbf{Bi-directional communication:} HTTP is a client -> server model, where only the client can initiate requests. This is fine for regular websites, however it does not work for scenarios where the server needs to send requests without the client initiating them, such as a realtime application like Choona. To counter this there are now several different strategies and protocols for handling bi-directional communication on the web, many of which are supported by Socket.IO such as WebSockets and long polling.
   \item \textbf{Device support:} Socket.IO will select the best available bi-directional protocol supported by both the client and server when setting up connections, resulting in almost all devices being supported.
   \item \textbf{Binary data support:} As specified in the requirements, the Choona app will need to be able to play audio out of the phone speakers/headphones. This means the audio data will need to be streamed into the app. Socket.IO has built-in support for correctly transferring binary data which means the audio can be streamed using the same communication and authentication methods as the rest of the app.
 \end{itemize}
@@ -139,7 +139,7 @@ As part of this first iteration of development a prototype of a Choona speaker a
 
 \subsection{UI}
 
-The Choona mobile app is made using the Ionic framework, which itself is built on top of AngularJS. As discussed in the design stages, building a mobile app using web-based technology allows it to easily be deployed to any platform. Ionic makes this even easier by making available a set of mobile-friendly UI components\footcite{ionic}. Figure \ref{fig:phonegap} shows how PhoneGap/Cordova is used to take the Choona sourcecode and compile it into ready-to-deploy applications for each mobile platform.
+The Choona mobile app is made using the Ionic framework, which itself is built on top of AngularJS. As discussed in the design stages, building a mobile app using web-based technology allows it to easily be deployed to any platform. Ionic makes this even easier by making available a set of mobile-friendly UI components\footcite{ionic}. Figure \ref{fig:phonegap} shows how PhoneGap/Cordova is used to take the Choona source code and compile it into ready-to-deploy applications for each mobile platform.
 
 The app itself is structured like a typical AngularJS application, using factories, states, controllers, scopes and views:
 

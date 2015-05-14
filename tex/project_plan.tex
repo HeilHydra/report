@@ -44,7 +44,7 @@ Below, we have defined our roles within the team to best suit our skills and to 
   \begin{tabular}{|l|l|l|}
   \hline
   \multicolumn{1}{|c|}{\textbf{Name}} & \multicolumn{1}{c|}{\textbf{Role}} & \multicolumn{1}{c|}{\textbf{Responsibilities}}                                                                                                                                      \\ \hline
-  Jay                                 & Project Secetary, App UI        & \begin{tabular}[c]{@{}l@{}}Organising meetings and following \\* the project timeline.\\ Assisting with development where \\* possible.\end{tabular} \\ \hline
+  Jay                                 & Project Secretary, App UI        & \begin{tabular}[c]{@{}l@{}}Organising meetings and following \\* the project timeline.\\ Assisting with development where \\* possible.\end{tabular} \\ \hline
   Oliver                              & Project Manager, Technical Lead                     & \begin{tabular}[c]{@{}l@{}}Leading the technical aspects of the \\* projects forward.\\ Managing cloud infrastructure for \\* both documentation and code.\end{tabular}                     \\ \hline
   Simon                               & Business Development, App UI    & \begin{tabular}[c]{@{}l@{}}Carrying the app forward according \\* to the business model in terms \\* of legal and technological factors.  \\ UI development\end{tabular}                                                              \\ \hline
   \end{tabular}
@@ -82,13 +82,13 @@ To identify the correct software development process to use we must first decide
   \item \textbf{Team Size} -
     Most of the development throughout this project will be done by one person. This removes the need for large-scale approaches such as \emph{Waterfall} and \emph{Spiral} and instead opens up the possibility of a faster, looser process such as \emph{Agile}.
   \item \textbf{Client Interaction} - 
-    If the project idea is accepted we will be allowed to work very closely with a representive from Atos. This means our development approach needs to incorporate this throughout the entire lifecycle, making methodologies such as \emph{Waterfall} less relevant since they do not encourage client interaction during the development stage.
+    If the project idea is accepted we will be allowed to work very closely with a representative from Atos. This means our development approach needs to incorporate this throughout the entire lifecycle, making methodologies such as \emph{Waterfall} less relevant since they do not encourage client interaction during the development stage.
   \item \textbf{Timeline} - 
     The entire development and testing cycle for the project is only a few months, so whatever approach is chosen needs to be dynamic and allow for quick iterations without the need to go through the entire process again. This requirement makes approaches such as \emph{Incremental Development} inappropriate because they add in repeated requirements analysis and architecture design steps that may not be necessary.
   \item \textbf{Deliverable} -
     The client is expecting a working prototype to be delivered at the end of the project. The technology must be built to a satisfactory standard, but does not need to be production-ready nor be immaculately written. This allows for the testing, integration and implementation steps in the software development approach to be removed as a priority and opens up the possibility of using less formal approaches such as \emph{Prototyping} and \emph{Extreme Programming}.
 \end{enumerate}
-These requirements narrow the scope down to three relevant approaches.  The first one is \textbf{Agile}.  Agile development promotes principles such as continuous improvement, early delivery, adaptive planning and evolutionary development. It breaks tasks down into small increments, with the goal of each increment being a new release. There is a big focus on quick communication and easy feedback, normally achieved by daily standup meetings and regular planning sessions. Whilst the communication principles would be useful for this project, the approach also tends to have a reliance on multiple teams tackling the project which is not relevant.\\
+These requirements narrow the scope down to three relevant approaches.  The first one is \textbf{Agile}.  Agile development promotes principles such as continuous improvement, early delivery, adaptive planning and evolutionary development. It breaks tasks down into small increments, with the goal of each increment being a new release. There is a big focus on quick communication and easy feedback, normally achieved by daily stand-up meetings and regular planning sessions. Whilst the communication principles would be useful for this project, the approach also tends to have a reliance on multiple teams tackling the project which is not relevant.\\
 The second approach we could take would be \textbf{Prototyping}.  Software prototyping is perfect for projects where a production-ready deliverable is not required. Each iteration of the project has no requirement to fully work or meet the users' requirements. Instead, the software goes through an iterative modification process until user acceptance is met or the prototype is discarded.  The downfall of prototyping is that it is a very relaxed approach. Client interaction is suggested, not enforced, and often the developers may lose sight of the completed project by getting too involved in a limited prototype which ultimately is only a partial representation of the desired product.\\
 Finally, we have \textbf{Rapid Application Development (RAD)}.  RAD is used to describe alternatives to the \emph{Waterfall} approach that focus on iterative development rather than formal, structured planning cycles. The most common definition of RAD, created by James Martin, involves an initial requirements planning stage followed by an iterative construction and user feedback stage.\\
 
@@ -105,7 +105,7 @@ The analysis above clearly identifies \textbf{Rapid Application Development} as 
 The technical considerations for this project can be divided into two sections: mobile application and server-side systems.
 
 \subsubsection{Mobile Application}
-One of the basic top-level requirements for this project is that the end product is centered around a mobile application.  Therefore it is important to ensure that all the technology used or idealised is compatible with as many mobile devices as possible.  If the app starts to have a dependency on niche features, such as NFC and 4G, there is a risk of excluding large quantities of users.\\
+One of the basic top-level requirements for this project is that the end product is centred around a mobile application.  Therefore it is important to ensure that all the technology used or idealised is compatible with as many mobile devices as possible.  If the app starts to have a dependency on niche features, such as NFC and 4G, there is a risk of excluding large quantities of users.\\
 For a mobile application, we must consider the platform.  There are currently three major mobile platforms that support apps: Android, iOS and Windows Phone.  Others like Blackberry and Firefox OS either do not have a thriving application community or have a very small user-base.  This project should ideally support all three of the major platforms.  The problem with this is that each one requires applications to be written in different languages.  In order to come to a decision, we need to consider the following:
 \begin{itemize}
 \item \emph{Native Applications} - A native application is one that is written to work directly with the device's operating system. For example on Android this would mean that the application is written in the programming language Java and that it directly uses the device's native libraries. The advantage this approach is mainly performance, but there are also certain features that are only available for native applications. The disadvantage is that the application has to be written separately for each platform you want to support.
@@ -116,14 +116,14 @@ The \textbf{Technology} behind the mobile device is another area of consideratio
 
 \subsubsection{Server-Side Systems}
 Many ideas and concepts in this project revolve around connected data and technology. There are likely to be many different services and systems required in order to complete the project. Designing and architecting will be an important part of ensuring the project is a success.  \\
-There are many different styles of \textbf{Software Architecture}. For this project we will be using the \emph{Microservices Architecture}. This is centered around separating out the application into individual services, each one with its own unique responsibility. This fits in nicely with the chosen Software Development Approach - \emph{Rapid Application Development} - since it allows for entire services to be completed in a single development cycle.\\
+There are many different styles of \textbf{Software Architecture}. For this project we will be using the \emph{Microservices Architecture}. This is centred around separating out the application into individual services, each one with its own unique responsibility. This fits in nicely with the chosen Software Development Approach - \emph{Rapid Application Development} - since it allows for entire services to be completed in a single development cycle.\\
 
     \textbf{Advantages}
     \begin{itemize}
       \item Easier debugging
       \item Better fault isolation
       \item Independent service development and deployment
-      \item Removes commitment to a specific technolog stack
+      \item Removes commitment to a specific technology stack
       \item Avoids monolithic applications and systems
     \end{itemize}
 
@@ -139,7 +139,7 @@ A solid \textbf{Infrastructure} is essential in order to adequately support the 
       \item \textbf{Cloud Computing} - 
         Cloud-based systems such as \emph{Amazon Web Services} (AWS) and \emph{IBM SoftLayer} allow systems engineers to easily configure and deploy scalable services across the globe. They often support many different types of services (application servers, databases, data processors, queues etc) and can be configured quickly and easily through user interfaces, rather than having to manually set up each service. The downside to cloud-based infrastructure is usually the cost and also the added abstraction; the systems engineer is no longer in direct control of each moving part which can sometimes make fault finding a more laborious process.
       \item \textbf{Dedicated Servers} - 
-        Dedicated servers are the more traditional approach to supporting software systems. They give the systems engineer absolute control over the entire infrastructure, however this goes hand-in-hand with the additional responsibility involved in configuring everything by hand. Another concern is redudancy. In a cloud-based system it is very easy to spin up copies of a service in the event of failture, however with a dedicated system you normally need to have servers on standby all the time. Compared to cloud services, dedicated servers can often work out cheaper.
+        Dedicated servers are the more traditional approach to supporting software systems. They give the systems engineer absolute control over the entire infrastructure, however this goes hand-in-hand with the additional responsibility involved in configuring everything by hand. Another concern is redundancy. In a cloud-based system it is very easy to spin up copies of a service in the event of failure, however with a dedicated system you normally need to have servers on standby all the time. Compared to cloud services, dedicated servers can often work out cheaper.
     \end{itemize}
 
 \subsection{Risk Assessment}
@@ -229,7 +229,7 @@ With any project, regardless of type or size there are risks involved. A risk as
 \textbf{Risk} & Using new/emerging technology \\ \hline
 \textbf{Probability} & Low \\ \hline
 \textbf{Impact} & Medium \\ \hline
-\textbf{Effect} & Unknown capabilities could holt progress.\\ \hline
+\textbf{Effect} & Unknown capabilities could halt progress.\\ \hline
 \textbf{Risk reduction actions} & Use technology that we are fully aware of. \\ \hline
 \textbf{If it occurs} &  \emph{Triggers:} not enough documentation.  \emph{Actions:} Have researched around the technology with relation to how we want to use it.\\ 
 \hline

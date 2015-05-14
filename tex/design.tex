@@ -65,7 +65,7 @@ To quickly review, as discussed in the literature review a dark user interface i
 
 Taking all this into account we can start playing with a couple of different colour schemes that is friendly with our research. Each colour scheme will consist of 3 colours; background colour, text colour and highlight colour. 
 
-The first colour scheme is to try to give the app a light user interface. The colours trialed here are a light grey (\#DDDDDD) with black (\#000) for text and light blue (\#009CFF) for highlighting elements. This does bring optimal readability to the table for choona however it can be argued that its not a text-heavy application so maybe readability is a high priority.\\
+The first colour scheme is to try to give the app a light user interface. The colours trialled here are a light grey (\#DDDDDD) with black (\#000) for text and light blue (\#009CFF) for highlighting elements. This does bring optimal readability to the table for choona however it can be argued that its not a text-heavy application so maybe readability is a high priority.\\
 
 \begin{figure}[h!]
     \centering
@@ -86,7 +86,7 @@ The second colour scheme sways more towards a dark UI. The background would be a
 The orange fits in better as a highlighting colour as it is quite a bright colour. Bright colours should not be overly used because then it would become a distraction and cause problems in terms of readability.  \\
 
 \noindent\underline{Choona Logo}\newline
-The logo for any business is used as a method to not only identify the business but also set it apart from others. The name `Choona' is a play on the word `Choon' which is slang to describe a song or a `Tune', it also sounds like `Tuna' thus we thought the logo should be a fish. As the look and feel of the app is quite minimal, the logo should be quite minimal too. However we did not want our logo to just be a fish, looking at how a usual Wi-Fi signal logo is designed, we thought that would be the perfect tail for the fish as Wi-Fi represents a network of people much like Choona does. After a very simple fish being drawn, a Wi-Fi tail was added and the image was rotated to look up, then the image was coloured to better go with the global colour scheme picked for the app. The tail will be animated in the app. This is shown in figure \ref{fig:logo}.
+The logo for any business is used as a method to not only identify the business but also set it apart from others. The name `Choona' is a play on the word `Choon' which is slang to describe a song or a `Tune', it also sounds like `Tuna' thus we thought the logo should be a fish. As the look and feel of the app is quite minimal, the logo should be quite minimal too. However we did not want our logo to just be a fish, looking at how a usual WiFi signal logo is designed, we thought that would be the perfect tail for the fish as WiFi represents a network of people much like Choona does. After a very simple fish being drawn, a WiFi tail was added and the image was rotated to look up, then the image was coloured to better go with the global colour scheme picked for the app. The tail will be animated in the app. This is shown in figure \ref{fig:logo}.
 
 \begin{figure}[h!]
 \centering
@@ -119,7 +119,7 @@ Next, Google's Lato font is another option shown in figure \ref{fig:lato}. This 
 
 Out of the two fonts, we believe Lato is the better fit for the application, with its clean minimal approach fitting in perfectly into the choona ecosystem, also the statistics speak for themselves; there is a clear reason this font is widely used.\\
 
-\subsubsection*{UI Mockups}
+\subsubsection*{UI Mock-ups}
 
 Here different pages of the app will be taken a look at closely, discussing different elements of the page in question and the reasoning behind any design decisions taken. This section will also make clear of the general overall aesthetics that choona has employed to make the user's life much easier while maintaining a sleek clean look.\\
 
@@ -137,9 +137,9 @@ The welcome pages will be shown to the user when they first install the app so t
 \label{fig:welcomescreens}
 \end{figure}
 
-Here the idea is to use multiple `slides' that the user can swipe through to progress the welcome screens. As shown in figure \ref{fig:welcomescreens} the users are first greeted with the Choona logo and a welcome message, then moving onto two screens that simply describe what choona does in one phrase; `Choon into the music you want....whereever you are'. These screens are split as this gives the chance to display the playlist page and a page with a map presented, showing that Choona can be used anywhere. The user can then slide to the next page where they are asked to sign in. 
+Here the idea is to use multiple `slides' that the user can swipe through to progress the welcome screens. As shown in figure \ref{fig:welcomescreens} the users are first greeted with the Choona logo and a welcome message, then moving onto two screens that simply describe what choona does in one phrase; `Choon into the music you want....wherever you are'. These screens are split as this gives the chance to display the playlist page and a page with a map presented, showing that Choona can be used anywhere. The user can then slide to the next page where they are asked to sign in. 
 
-The concept clearly follows the rules here with each slide having minimal information but still making it clear on what the application is about. The use of a mutlistep welcome screen here not only gives a dimension of interactiveness to the user when starting the app but it also lets the app know that the information on the page swiped has been acknowledged by the user.  
+The concept clearly follows the rules here with each slide having minimal information but still making it clear on what the application is about. The use of a multi-step welcome screen here not only gives a dimension of interactiveness to the user when starting the app but it also lets the app know that the information on the page swiped has been acknowledged by the user.  
 
 \clearpage
 
@@ -155,7 +155,7 @@ The concept clearly follows the rules here with each slide having minimal inform
 
 For the login page as the app will be using auth0 authentication, there is already a template provided by auth0 to implement into the app in question. This template can be changed if needed, or themed to the developers liking but here it has been kept very simple just the background needs to be changed and the logo will need to added to the template provided.
 
-This screen already takes care of a clean look that Choona is aiming for, the form is laid out very well with all the buttons arranged so that the user is not confused. A clear distinction is made between logging on via a social network or by an email address which is something the login screen needs to encompass. The signin button is clear and well placed will seize the Choona orange which ties up our theme.\\
+This screen already takes care of a clean look that Choona is aiming for, the form is laid out very well with all the buttons arranged so that the user is not confused. A clear distinction is made between logging on via a social network or by an email address which is something the login screen needs to encompass. The sign-in button is clear and well placed will seize the Choona orange which ties up our theme.\\
 
 \clearpage
 
@@ -183,7 +183,7 @@ The side menu page will be used by the user to navigate the app. It's important 
 \label{fig:playlist}
 \end{figure}
 
-This is one of the most important pages in the application, here the user will be able to vote on the songs suggested and also have access to the search page where they will be able to add a song. From the top, the user will see a carsouel of images which the business will set up beforehand, this could be adverts by the business. Below there will be the list of suggested songs by others. These are in a list all having separate upvote and downvote buttons, everything being spaced evenly so the user can scroll and vote with ease. They are also presented with a live vote-meter on the left of every song item in the list. This adds another dimension to the app where they can visually see how well that track is doing (more votes = higher up the list), this is denoted by appropriate green and red bars in the votemeter. Finally at the bottom, the now playing bar shows the current song being played. This bar can be tapped on to access the now playing page; this is conventional in most music applications, such as Google play music.
+This is one of the most important pages in the application, here the user will be able to vote on the songs suggested and also have access to the search page where they will be able to add a song. From the top, the user will see a carousel of images which the business will set up beforehand, this could be adverts by the business. Below there will be the list of suggested songs by others. These are in a list all having separate upvote and downvote buttons, everything being spaced evenly so the user can scroll and vote with ease. They are also presented with a live vote-meter on the left of every song item in the list. This adds another dimension to the app where they can visually see how well that track is doing (more votes = higher up the list), this is denoted by appropriate green and red bars in the votemeter. Finally at the bottom, the now playing bar shows the current song being played. This bar can be tapped on to access the now playing page; this is conventional in most music applications, such as Google play music.
 
 \clearpage
 
