@@ -136,17 +136,10 @@ Auth0 handles the entire login and authentication process without needing any ch
 
 As part of this first iteration of development a prototype of a Choona speaker adapter has been made. The hardware used is a Raspberry Pi 2 Model B running the Raspbian operating system. The software itself is designed to be as autonomous as possible; once the device has an internet connection it will automatically connect to the Choona API, authenticate and start streaming to music from the pre-configured playlist. This is then outputted from the jack socket of the Raspberry Pi into whatever speakers or headphones are connected.
 
-\clearpage
+
 \subsection{UI}
 
 The Choona mobile app is made using the Ionic framework, which itself is built on top of AngularJS. As discussed in the design stages, building a mobile app using web-based technology allows it to easily be deployed to any platform. Ionic makes this even easier by making available a set of mobile-friendly UI components\footcite{ionic}. Figure \ref{fig:phonegap} shows how PhoneGap/Cordova is used to take the Choona sourcecode and compile it into ready-to-deploy applications for each mobile platform.
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=0.5\textwidth]{./img/phonegap.png}
-  \caption{PhoneGap/Cordova build process\footcite{phonegap}}
-  \label{fig:phonegap}
-\end{figure}
 
 The app itself is structured like a typical AngularJS application, using factories, states, controllers, scopes and views:
 
@@ -157,6 +150,13 @@ The app itself is structured like a typical AngularJS application, using factori
   \item \textbf{Scope:} each controller/state has it's own scope for containing variables and methods, which is inherited and extended from parent scopes
   \item \textbf{View:} HTML mixed in with Angular's data binding syntax
 \end{itemize}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.5\textwidth]{./img/phonegap.png}
+  \caption{PhoneGap/Cordova build process\footcite{phonegap}}
+  \label{fig:phonegap}
+\end{figure}
 
 Figure \ref{fig:state} shows Choona's application state/scope tree. Children inherit the scopes of their parents, which makes it possible to pass properties and methods from the root scope all the way down to nodes at the bottom of the tree. This inheritance also makes it simple to implement authentication restrictions; by applying the restriction in the App state the application will also inherently prevent access to all the child states.
 
