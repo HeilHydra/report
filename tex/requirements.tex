@@ -40,7 +40,7 @@
   \begin{itemize}
   \item Subscription options.
   \item Genre restrictions.
-  \item Be able to configure any ad services for the location; including sound bytes and carousel images.
+  \item Be able to configure any ad services for the location, including sound bytes and carousel images.
   \item Default playlists if no songs are suggested.
   \item Geofence/Geolocation options.
   \item Override the queue if needed.
@@ -60,7 +60,7 @@
   Requirement:       & REQ.4 \\ \hline
   Type:              & Functional \\ \hline
   Description:       & The user must be able to suggest a song using search. \\ \hline
-  Rationale:         & For the dynamic playlist to work, the user must be able suggest a song they want to be played in public. This song will then be added to the dynamic playlist ordered by the number of votes. If the song already belongs on the playlist then it will not be added again. \\ \hline
+  Rationale:         & For the dynamic playlist to work, the user must be able suggest a song they want to be played in public. This song will then be added to the dynamic playlist ordered by the number of votes. If the song already exists in the playlist then it will not be added again. \\ \hline
   Dependencies:      & REQ.1, REQ.2 \\ \hline
   MoSCoW Rating:     & Must \\
 \hline
@@ -73,8 +73,8 @@
   \hline
   Requirement:       & REQ.5 \\ \hline
   Type:              & Functional \\ \hline
-  Description:       & The user must be able to see all the songs suggested by others ordered by a intelligent algorithm for the geolocation they are connected to.\\ \hline
-  Rationale:         & The user should be able to see what songs are suggests so they can vote for songs if they wish, these songs must be sorted by an intelligent algorithm where the amount of votes will be a big factor with elements to make the order of songs fairer (eliminating up voting too much, down voting too much, ghost voting). \\ \hline
+  Description:       & The user must be able to see all the songs suggested by others, managed by an intelligent algorithm for the geolocation they are connected to.\\ \hline
+  Rationale:         & The user should be able to see what songs are suggests so they can upvote and downvote; these songs must be sorted by an intelligent algorithm where the amount of votes will be largest variable in maintaining a fair song order (eliminating repetitive or ghost voting). \\ \hline
   Dependencies:      & REQ.1, REQ.2 \\ \hline
   MoSCoW Rating:     & Must \\
 \hline
@@ -88,7 +88,7 @@
   Requirement:       & REQ.6 \\ \hline
   Type:              & Functional \\ \hline
   Description:       & The user must be able to vote on the songs suggested by others for the geolocation they are connected to. \\ \hline
-  Rationale:         & Songs that are already on the playlist can be upvoted/downvoted by the user. The dynamic playlist is dependent upon this where song are ordered by a amount of votes. \\ \hline
+  Rationale:         & Songs that are already on the playlist can be upvoted/downvoted by the user. The dynamic playlist is dependent upon this where songs are ordered by a amount of votes. \\ \hline
   Dependencies:      & REQ.1, REQ.2 \\ \hline
   MoSCoW Rating:     & Must \\
 \hline
@@ -236,8 +236,8 @@
   \hline
   Requirement:       & REQ.17 \\ \hline
   Type:              & Functional \\ \hline
-  Description:       & The user must be able to log out from their choona account.   \\ \hline
-  Rationale:         & There should be a button for the user to log out of their choona account if they wish to maybe log in with an alternative account.  \\ \hline
+  Description:       & The user must be able to log out from their Choona account.   \\ \hline
+  Rationale:         & There should be a button for the user to log out of their Choona account.  \\ \hline
   Dependencies:      & REQ.1, REQ.2 \\ \hline
   MoSCoW Rating:     & Must \\ \hline
 \end{tabular}\\
