@@ -14,7 +14,7 @@ The queue and streaming services have been joined together to create a single pl
 
 All three types of APIs have been implemented as one singular Socket.IO API for the purposes of the prototype in an effort to make authentication simpler.
 
-Finally, the management and control part of the mobile app has not been implemented due to time constraints; users will only be able to add songs, upvote/downvote tracks and listen to audio.
+Finally, the management and control part of the mobile app has not been implemented due to time constraints; users will only be able to add songs, up-vote/down-vote tracks and listen to audio.
 
 \clearpage
 \subsection{Inter-Service Communication}
@@ -87,7 +87,7 @@ Clients can then choose to handle the audio in whatever method they prefer; for 
 Socket.IO is a realtime bi-directional communication protocol and library, designed to replace standard HTTP-based web communication. For Choona, Socket.IO offers the following benefits:
 
 \begin{itemize}
-  \item \textbf{Bi-directional communication:} HTTP is a client -> server model, where only the client can initiate requests. This is fine for regular websites, however it does not work for scenarios where the server needs to send requests without the client initiating them, such as a realtime application like Choona. To counter this there are now several different strategies and protocols for handling bi-directional communication on the web, many of which are supported by Socket.IO such as WebSockets and long polling.
+  \item \textbf{Bi-directional communication:} HTTP is a client -\> server model, where only the client can initiate requests. This is fine for regular websites, however it does not work for scenarios where the server needs to send requests without the client initiating them, such as a realtime application like Choona. To counter this there are now several different strategies and protocols for handling bi-directional communication on the web, many of which are supported by Socket.IO such as WebSockets and long polling.
   \item \textbf{Device support:} Socket.IO will select the best available bi-directional protocol supported by both the client and server when setting up connections, resulting in almost all devices being supported.
   \item \textbf{Binary data support:} As specified in the requirements, the Choona app will need to be able to play audio out of the phone speakers/headphones. This means the audio data will need to be streamed into the app. Socket.IO has built-in support for correctly transferring binary data which means the audio can be streamed using the same communication and authentication methods as the rest of the app.
 \end{itemize}
